@@ -1,0 +1,87 @@
+input {
+    width: 300px;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 16px 24px 16px 16px;
+    border: none;
+  }
+
+  .contact_value {
+   margin: 24px 0; 
+  }
+
+  .contact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 650px;
+    background-image: linear-gradient(to right top, #d8dfe9, #d2e6ed, #d1edeb, #d9f1e2, #ebf3d9);
+    padding: 30px;
+    box-shadow: 2px 3px 4px 5px rgba(12,12,12,0.2);
+  }
+
+button[type="submit"] {
+    width: 180px;
+    height: 40px;
+    background-color: #4A90E2;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid #4A90E2;
+}
+
+.contact-label {
+    margin: 16px 0;
+}
+
+textarea {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 16px 20px;
+    border: none;
+}
+
+/* Sub Feature of FAQ Styles */
+
+.faq-wrapper {
+    width: 100%;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.faq-contain {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0; 
+    border: 1px solid rgb(238, 242, 238);
+    border-radius: 50px;
+    padding: 24px;
+    cursor: pointer;
+    background: rgb(248, 247, 247);
+    width: 100%;
+}
+
+#qa-1, #qa-2, #qa-3, #qa-4, #qa-5, #qa-6, #qa-7 {
+    display: none;
+}
+
+.faq-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

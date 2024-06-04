@@ -1,4 +1,4 @@
-body {
+* {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -20,11 +20,6 @@ body {
     align-items: center;
 }
 
-input {
-    padding: 8px;
-    border: 1px solid black;
-    border-radius: 8px;
-}
 
 header h1 {
     color: var(--secondary)
@@ -38,23 +33,28 @@ nav ul {
     justify-content: center;
 }
 
-nav ul li {
+/* nav ul li {
     margin: 0 15px;
-}
+} */
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 20px 40px;
     display: block;
+    text-align: center;
+    width: auto;
 }
 
-nav ul li a:hover {
+nav ul li a:hover  {
     background-color: #003300; /* Darker green */
     transition: background-color 0.3s;
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
@@ -62,14 +62,13 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: var(--primary);
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
 .search {
     position: relative;
 }
+
 .search-input {
     width: 90%;
     padding: 10px;
@@ -87,16 +86,54 @@ footer {
     cursor: pointer;
 }
 
+.imag-contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .image-swapper {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
+    width: 1000px;
+    height: 600px;
 }
 
 .image-swapper img {
     max-width: 80%;
-    height: auto;
     border: 2px solid #4CAF50;
     border-radius: 10px;
+    height: 100%;
+    width: 100%;
 }
+
+
+/* Hide my submenus by default */
+.my-menu ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+  }
+  
+  /* Position submenus relative to parent list item */
+  .my-menu li {
+    position: relative;
+  }
+  
+  .my-menu li a {
+    padding: 15px 30px;
+  }
+  /* Look, Ma! No onclick handler! */
+  .my-menu li:hover > ul {
+    display: block;
+    min-width: 100%;
+  }
+  
+  /* Modern Browsers only */
+  .my-menu li:focus-within > ul {
+    display: block;
+  }
