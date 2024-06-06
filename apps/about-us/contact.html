@@ -27,7 +27,7 @@
             </li>
             <li><a href="#"> BHUTAN </a>
               <ul>
-                <li><a href="#"> GEOGRAPHY </a></li>
+                <li><a href="../bhutan/geography.html"> GEOGRAPHY </a></li>
                 <li><a href="#"> HOTELS </a></li>
                 <li><a href="#">FESTIVAL CALENDAR</a></li>
                 <li><a href="#"> FLIGHT </a></li>
@@ -54,29 +54,41 @@
                     <div class="contact_value">
                         <div class="contact-label" for="name">Name:</div>
                          <input type="text" id="name" name="name" required>
+                         <p id="error-name" class="contact-error">
+                            This field is required
+                        </p>
                     </div>
                     <div class="contact_value">
                         <div class="contact-label" for="email">Email:</div>
                         <input type="email" id="email" name="email" required>
+                        <p id="error-email" class="contact-error">
+                            This field is required
+                        </p>
                     </div>
                     <div class="contact_value">
                         <div class="contact-label" for="subject">Subject:</div>
                         <input type="text" id="subject" name="subject" required>
+                        <p id="error-subject" class="contact-error">
+                            This field is required
+                        </p>
                     </div>
 
                     <div class="contact_value">
                         <div class="contact-label" for="message">Message:</div>
                         <textarea id="message" rows="6" name="message" required></textarea>
+                        <p id="error-message" class="contact-error">
+                            This field is required
+                        </p>
                     </div>
-                    <button type="submit">Submit</button>
+                    <button type="submit" onclick="submitForm(event)">Submit</button>
                 </form>
             </div>
-            <p id="error-message" style="color: red; display: none;">Please fill in all fields.</p>
+            
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Choki Dorji</p>
     </footer>
-    <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/form-validation.js"></script>
 </body>
 </html>
