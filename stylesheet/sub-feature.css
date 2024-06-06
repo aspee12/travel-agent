@@ -220,3 +220,29 @@ textarea {
     font-weight: bold;
     color: #990000;
 }
+
+.festival-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 20px;
+}
+
+.festival-card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.festival-card-content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    margin-top: 22px;
+    margin-left: 12px;
+    letter-spacing: 1px;
+}
