@@ -92,3 +92,12 @@ textarea {
     justify-content: space-between;
     align-items: center;
 }
+
+/* Bhutan Feature style */
+.georaphy-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 60%;
+    margin: auto;
+}
