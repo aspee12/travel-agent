@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const images = [
-        '../../assets/swapper1.png',
-        '../../assets/swapper2.jpeg',
-        '../../assets/swapper3.jpg'
+        '../assets/swapper1.png',
+        '../assets/swapper2.jpeg',
+        '../assets/swapper3.jpg'
     ];
     let currentIndex = 0;
     const swapperImage = document.getElementById('swapper-image');
