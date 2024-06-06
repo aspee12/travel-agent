@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function(){
     const fields = ['name', 'email', 'subject', 'message'];
 

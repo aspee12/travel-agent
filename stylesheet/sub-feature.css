@@ -133,13 +133,13 @@ textarea {
 }
 
 /*Sub feature Calender styles of Bhutan*/
-.main-calender {
+.main-calendar {
     width: 70%;
     margin: auto;
     display: block;
 }
 
-.calender-contain {
+.calendar-contain {
     display: flex;
     flex-direction: row;
     margin-top: 16px;
@@ -150,13 +150,17 @@ textarea {
     flex: 1;
 }
 
-.calender-head {
+/*.flex{*/
+/*    display: flex;*/
+/*}*/
+
+.calendar-head {
     font-weight: bold;
     border-bottom: 2px solid gray;
     padding-bottom: 8px;
 }
 
-.calender-value {
+.calendar-value {
     border-bottom: 1px solid lightgray;
     padding-bottom: 8px;
 }
@@ -193,4 +197,16 @@ textarea {
     border-radius: 8px;
     border: 1px solid #0c0b0b;
     cursor: pointer;
+}
+/*Visa feature style*/
+.visa-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.visa-container_list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
