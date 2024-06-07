@@ -18,6 +18,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: 768px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.responsive-header {
+    display: none;
+
+    @media only screen and (max-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+    }
+
+}
+
+.logo {
+    @media only screen and (max-width: 768px){
+        display: none;
+        width: 100%;
+    }
 }
 
 
@@ -53,6 +82,16 @@ main {
     justify-content: center;
     align-items: center;
     padding: 20px;
+
+    @media only screen and (max-width: 768px) {
+        padding: 20px 40px;
+    }
+}
+
+.parent-content > sectio n{
+    @media only screen and (max-width: 768px) {
+        padding: 0 20px;
+    }
 }
 
 footer {
@@ -62,10 +101,26 @@ footer {
     color: black;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer > p {
+    padding: 4px 0;
+}
+
+footer > p > i {
+    padding-right: 10px;
 }
 
 .search {
     position: relative;
+
+    @media only screen and (max-width: 768px){
+        width: 100%;
+    }
 }
 
 .search-input {
@@ -83,6 +138,10 @@ footer {
     font-size: 18px;
     color: #ccc;
     cursor: pointer;
+
+    @media only screen and (max-width:  768px) {
+        right: 50px;
+    }
 }
 
 .imag-contents{
@@ -99,6 +158,10 @@ footer {
     margin-top: 2rem;
     width: 1000px;
     height: 600px;
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+    }
 }
 
 .image-swapper img {
@@ -136,3 +199,6 @@ footer {
   .my-menu li:focus-within > ul {
     display: block;
   }
+
+  //responsive css
+  
