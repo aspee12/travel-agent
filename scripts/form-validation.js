@@ -31,10 +31,11 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 // This logic is to remove form validation with value of form
-function handleFocus(event, field) { debugger
-    const inputField = document.getElementById(`${field}`);
+function handleFocus(event, field) {
+    const inputField = document.getElementById(field);
     const errorElement = document.getElementById(`error-${field}`);
-    if (event['data']) {
+    const value = inputField.value;
+    if (value) {
         inputField.style.border = '1px solid lightgrey';
         errorElement.style.display = 'none';
     } else {

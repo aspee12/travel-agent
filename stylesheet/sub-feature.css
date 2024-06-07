@@ -127,6 +127,7 @@ textarea {
 .hotel-card:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     padding-bottom: 6px;
+    cursor: pointer;
 }
 
 .icon-color {
@@ -300,4 +301,42 @@ textarea {
     font-size: 24px;
     margin-right: 12px;
     color: maroon;
+}
+
+/*Flight Details feature StyleSheet*/
+.air-main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.air-min-card_content {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px 40px 60px 40px;
+}
+
+.air-min-card_content > p, span {
+    line-height: 24px;
+}
+
+.air-min-card_content > p {
+    margin: 0 0 16px 0;
+    text-align: justify;
+}
+
+.air-main-card_description {
+    margin:32px 0 20px 0;
+    width: 15%;
+    text-align: left;
+    padding: 16px;
+    border: 1px solid lightgray
+}
+
+/*Transitions Style included*/
+
+.transitions-image-scale:hover {
+    scale: 0.95;
+    transition: all 600ms;
 }
