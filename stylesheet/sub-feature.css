@@ -1,0 +1,342 @@
+/* Contact Feature styels */
+input {
+    width: 300px;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 16px 24px 16px 16px;
+    border: none;
+  }
+
+  .contact_value {
+   margin: 24px 0; 
+  }
+
+  .contact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    min-height: 650px;
+    background-image: linear-gradient(to right top, #d8dfe9, #d2e6ed, #d1edeb, #d9f1e2, #ebf3d9);
+    padding: 30px;
+    box-shadow: 2px 3px 4px 5px rgba(12,12,12,0.2);
+  }
+
+
+button[type="submit"] {
+    width: 180px;
+    height: 40px;
+    background-color: #4A90E2;
+    border-radius: 10px;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid #4A90E2;
+}
+
+.contact-label {
+    margin: 16px 0;
+}
+
+textarea {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 16px 20px;
+    border: none;
+}
+
+.contact-error {
+    color: red;
+    display: none;
+    margin-top: 8px;
+}
+
+/* Sub Feature of FAQ Styles */
+
+.faq-wrapper {
+    width: 100%;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.faq-contain {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0; 
+    border: 1px solid rgb(238, 242, 238);
+    border-radius: 16px;
+    padding: 24px;
+    cursor: pointer;
+    background: rgb(248, 247, 247);
+    width: 100%;
+}
+
+#qa-1, #qa-2, #qa-3, #qa-4, #qa-5, #qa-6, #qa-7 {
+    display: none;
+}
+
+.faq-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Bhutan Feature style */
+.georaphy-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 60%;
+    margin: auto;
+}
+
+.hotel-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 20px;
+}
+
+.hotel-name {
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+.hotel-card {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.hotel-card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+.icon-color {
+    color: #ffc63f;
+}
+
+/*Sub feature Calender styles of Bhutan*/
+.main-calendar {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+.calendar-contain {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.flex-width {
+    flex: 1;
+}
+
+/*.flex{*/
+/*    display: flex;*/
+/*}*/
+
+.calendar-head {
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+    padding-bottom: 8px;
+}
+
+.calendar-value {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 8px;
+}
+/*Flight Feature styles*/
+.air-card {
+    position: relative;
+}
+
+.air-card:hover > .air-card-background {
+    display: flex;
+}
+
+.air-card-background {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 434px;
+    background: #8ad6f5;
+    opacity: 0.7;
+}
+
+.detail-btn {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.btn-view {
+    padding: 8px 16px;
+    border-radius: 2px;
+    border: 1px solid #0c0b0b;
+    cursor: pointer;
+    background: #e3293e;
+}
+
+.btn-view:hover {
+   background: white;
+   color: #0c0b0b;
+}
+
+/*Visa feature style*/
+.visa-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.visa-container_list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/*Packages feature StyleSheet*/
+.culture-paragraph {
+    margin: 20px 0 20px 0;
+}
+
+.culture-sub-head {
+    font-weight: bold;
+    color: #990000;
+}
+
+.festival-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 62px;
+}
+
+.festival-card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.festival-card-content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    margin-top: 22px;
+    margin-left: 12px;
+    letter-spacing: 1px;
+}
+
+.main-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Booking feature style*/
+
+.booking-contact{
+    padding: 24px;
+    width: 60%;
+}
+
+.booking-details {
+    padding: 24px;
+    width: 40%;
+}
+
+.booking-contact-input {
+    margin: 12px 0;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.input-field {
+    margin: 8px 0;
+    border-radius: 0;
+    border: 1px solid lightgray;
+}
+
+.booking-details-content {
+    display: flex;
+    align-items: center;
+}
+
+.booking-details-contact {
+    margin-bottom: 24px;
+}
+
+.booking-icon {
+    font-size: 24px;
+    margin-right: 12px;
+    color: maroon;
+}
+
+/*Flight Details feature StyleSheet*/
+.air-main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.air-min-card_content {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px 40px 60px 40px;
+}
+
+.air-min-card_content > p, span {
+    line-height: 24px;
+}
+
+.air-min-card_content > p {
+    margin: 0 0 16px 0;
+    text-align: justify;
+}
+
+.air-main-card_description {
+    margin:32px 0 20px 0;
+    width: 15%;
+    text-align: left;
+    padding: 16px;
+    border: 1px solid lightgray
+}
+
+/*Transitions Style included*/
+
+.transitions-image-scale:hover {
+    scale: 0.95;
+    transition: all 600ms;
+}

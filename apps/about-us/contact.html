@@ -3,40 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Choki Dorji</title>
+    <title>Choki Travel - Home</title>
+    <link rel="stylesheet" href="../../stylesheet/sub-feature.css">
     <link rel="stylesheet" href="../../stylesheet/styles.css">
 </head>
 <body>
-    <header>
-        <img src="path_to_your_image.jpg" alt="Choki Dorji">
-        <h1>Choki Dorji</h1>
+    <header class="header-content">
+        <img width="80px" src="../../assets/logo.png" alt="Choki Dorji">
+        <h1>Choki Travel Agent</h1>
+        <div class="search">
+            <input type="text" placeholder="Search" class="search-input">
+            <i class="search-icon fa fa-search"></i>
+        </div>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <!-- Add other navigation links here -->
-        </ul>
+        <ul class="my-menu">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="#"> ABOUT US </a>
+              <ul>
+                <li><a target="_parent" href="../about-us/contact.html">CONTACT</a></li>
+                <li><a href="../about-us/faq.html">FAQ</a></li>
+              </ul>
+            </li>
+            <li><a href="#"> BHUTAN </a>
+              <ul>
+                <li><a href="../bhutan/geography.html"> GEOGRAPHY </a></li>
+                <li><a href="../bhutan/hotel.html"> HOTELS </a></li>
+                <li><a href="../bhutan/calendar.html">FESTIVAL CALENDAR</a></li>
+                <li><a href="../bhutan/flight.html"> FLIGHT </a></li>
+                <li><a href="../bhutan/visa.html"> VISA </a></li>
+              </ul>
+            </li>
+            <li><a href="#"> PACKAGES </a>
+              <ul>
+                <li><a href="../packages/culture.html"> CULTURAL </a></li>
+                <li><a href="../packages/festival.html"> FESTIVAL </a></li>
+                <li><a href="../packages/trekking.html"> TREKKING </a></li>
+              </ul>
+            </li>
+            <li>
+                <a href="../book-now/book-now.html"> BOOK NOW </a>
+            </li>
+          </ul>
     </nav>
     <main>
-        <section>
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-            <p id="error-message" style="color: red; display: none;">Please fill in all fields.</p>
+        <section class="contact-parent">
+            <div class="contact-card">
+                <h2 style="margin-top: 16px;">Contact Me</h2>
+                <form id="contactForm">
+                    <div class="contact_value">
+                        <div class="contact-label" for="name">Name:</div>
+                         <input type="text" id="name" name="name" required>
+                         <p id="error-name" class="contact-error">
+                            This field is required
+                        </p>
+                    </div>
+                    <div class="contact_value">
+                        <div class="contact-label" for="email">Email:</div>
+                        <input type="email" id="email" name="email" required>
+                        <p id="error-email" class="contact-error">
+                            This field is required
+                        </p>
+                    </div>
+                    <div class="contact_value">
+                        <div class="contact-label" for="subject">Subject:</div>
+                        <input type="text" id="subject" name="subject" required>
+                        <p id="error-subject" class="contact-error">
+                            This field is required
+                        </p>
+                    </div>
+
+                    <div class="contact_value">
+                        <div class="contact-label" for="message">Message:</div>
+                        <textarea id="message" rows="6" name="message" required></textarea>
+                        <p id="error-message" class="contact-error">
+                            This field is required
+                        </p>
+                    </div>
+                    <button type="submit" onclick="submitForm(event)">Submit</button>
+                </form>
+            </div>
+            
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Choki Dorji</p>
     </footer>
-    <script src="../../scripts/scripts.js"></script>
+    <script src="../../scripts/form-validation.js"></script>
 </body>
 </html>

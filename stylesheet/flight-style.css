@@ -1,0 +1,30 @@
+/*Flight Details feature StyleSheet*/
+.air-main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.air-min-card_content {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px 40px 60px 40px;
+}
+
+.air-min-card_content > p, span {
+    line-height: 24px;
+}
+
+.air-min-card_content > p {
+    margin: 0 0 16px 0;
+    text-align: justify;
+}
+
+.air-main-card_description {
+    margin:32px 0 20px 0;
+    width: 15%;
+    text-align: left;
+    padding: 16px;
+    border: 1px solid lightgray
+}
