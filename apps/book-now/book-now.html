@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,114 +8,132 @@
     <link rel="stylesheet" href="../../stylesheet/sub-feature.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-<header class="header-content">
-    <img width="80px" src="../../assets/logo.png" alt="Choki Dorji">
-    <h1>Choki Travel Agent</h1>
-    <div class="search">
-        <input type="text" placeholder="Search" class="search-input">
-        <i class="search-icon fa fa-search"></i>
-    </div>
-</header>
-<nav>
-    <ul class="my-menu">
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="#"> ABOUT US </a>
-            <ul>
-                <li><a href="../about-us/contact.html">CONTACT</a></li>
-                <li><a href="../about-us/faq.html">FAQ</a></li>
-            </ul>
-        </li>
-        <li><a href="book-now.html"> BHUTAN </a>
-            <ul>
-                <li><a href="../bhutan/geography.html"> GEOGRAPHY </a></li>
-                <li><a href="../bhutan/hotel.html"> HOTELS </a></li>
-                <li><a href="../bhutan/calendar.html">FESTIVAL CALENDAR</a></li>
-                <li><a href="../bhutan/flight.html"> FLIGHT </a></li>
-                <li><a href="../bhutan/visa.html"> VISA </a></li>
-            </ul>
-        </li>
-        <li><a href="#"> PACKAGES </a>
-            <ul>
-                <li><a href="../packages/culture.html"> CULTURAL </a></li>
-                <li><a href="../packages/festival.html"> FESTIVAL </a></li>
-                <li><a href="../packages/trekking.html"> TREKKING </a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="book-now.html"> BOOK NOW </a>
-        </li>
-    </ul>
-</nav>
-<main>
-    <div style="display: flex; justify-content: center; width: 100%">
-        <div class="booking-contact">
-            <form id="bookingForm" style="display: flex; flex-wrap: wrap;">
-                <div class="booking-contact-input full-width">
-                    <label class="contact-label" for="name">Name: </label>
-                    <input class="full-width input-field" type="text" id="name" name="name" required>
-                    <p id="error-name" class="contact-error">
-                        This field is required
-                    </p>
-                </div>
-                <div class="booking-contact-input"  style="width: 48%; margin-right: 24px">
-                    <label class="contact-label" for="email">Email: </label>
-                    <input class="full-width input-field" type="email" id="email" name="email" required>
-                    <p id="error-email" class="contact-error">
-                        This field is required
-                    </p>
-                </div>
-                <div class="booking-contact-input" style="width: 49%">
-                    <label class="contact-label" for="phone">Phone Number: </label>
-                    <input class="full-width input-field" type="text" id="phone" name="phone" required>
-                    <p id="error-phone" class="contact-error">
-                        This field is required
-                    </p>
-                </div>
-                <div class="booking-contact-input full-width">
-                    <label class="contact-label" for="message">Message: </label>
-                    <textarea class="full-width input-field" rows="12" cols="20" type="text" id="message" name="message" required></textarea>
-                    <p id="error-message" class="contact-error">
-                        This field is required
-                    </p>
-                </div>
-                <button style="border-radius: 0" type="submit" onclick="submitForm(event, 'booking')">Book Now</button>
-            </form>
+    <header class="header-content">
+        <img width="80px" class="logo" src="../../assets/logo.png" alt="Choki Dorji">
+        <h1 class="logo">Choki Travel Agent</h1>
+        <div class="search">
+            <input type="text" placeholder="Search" class="search-input">
+            <i class="search-icon fa fa-search"></i>
         </div>
-        <div class="booking-details">
-            <div class="booking-details-content">
-                <img width="60px" src="../../assets/logo.png" alt="Choki Dorji">
-                <div style="margin-left: 20px">
-                    <h2>Choki Travel Agent</h2>
-                    <i style="font-size: 14px; text-decoration: underline; color: gray">
-                        <a href="../packages/trekking.html">Choose for the best Trip</a>
-                    </i>
+
+        <div class="responsive-header">
+            <img width="80px" src="../../assets/logo.png" alt="Choki Dorji">
+            <h1>Choki Travel Agent</h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="my-menu">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="#"> ABOUT US </a>
+                <ul>
+                    <li><a href="../about-us/contact.html">CONTACT</a></li>
+                    <li><a href="../about-us/faq.html">FAQ</a></li>
+                </ul>
+            </li>
+            <li><a href="book-now.html"> BHUTAN </a>
+                <ul>
+                    <li><a href="../bhutan/geography.html"> GEOGRAPHY </a></li>
+                    <li><a href="../bhutan/hotel.html"> HOTELS </a></li>
+                    <li><a href="../bhutan/calendar.html">FESTIVAL CALENDAR</a></li>
+                    <li><a href="../bhutan/flight.html"> FLIGHT </a></li>
+                    <li><a href="../bhutan/visa.html"> VISA </a></li>
+                </ul>
+            </li>
+            <li><a href="#"> PACKAGES </a>
+                <ul>
+                    <li><a href="../packages/culture.html"> CULTURAL </a></li>
+                    <li><a href="../packages/festival.html"> FESTIVAL </a></li>
+                    <li><a href="../packages/trekking.html"> TREKKING </a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="book-now.html"> BOOK NOW </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div style="display: flex; justify-content: center; width: 100%">
+            <div class="booking-contact">
+                <form id="bookingForm" style="display: flex; flex-wrap: wrap;">
+                    <div class="booking-contact-input full-width">
+                        <label class="contact-label" for="name">Name: </label>
+                        <input class="full-width input-field" type="text" id="name" name="name" required>
+                        <p id="error-name" class="contact-error">
+                            This field is required
+                        </p>
+                    </div>
+                    <div class="booking-contact-input" style="width: 48%; margin-right: 24px">
+                        <label class="contact-label" for="email">Email: </label>
+                        <input class="full-width input-field" type="email" id="email" name="email" required>
+                        <p id="error-email" class="contact-error">
+                            This field is required
+                        </p>
+                    </div>
+                    <div class="booking-contact-input" style="width: 49%">
+                        <label class="contact-label" for="phone">Phone Number: </label>
+                        <input class="full-width input-field" type="text" id="phone" name="phone" required>
+                        <p id="error-phone" class="contact-error">
+                            This field is required
+                        </p>
+                    </div>
+                    <div class="booking-contact-input full-width">
+                        <label class="contact-label" for="message">Message: </label>
+                        <textarea class="full-width input-field" rows="12" cols="20" type="text" id="message"
+                            name="message" required></textarea>
+                        <p id="error-message" class="contact-error">
+                            This field is required
+                        </p>
+                    </div>
+                    <button style="border-radius: 0" type="submit" onclick="submitForm(event, 'booking')">Book
+                        Now</button>
+                </form>
+            </div>
+            <div class="booking-details">
+                <div class="booking-details-content">
+                    <img width="60px" src="../../assets/logo.png" alt="Choki Dorji">
+                    <div style="margin-left: 20px">
+                        <h2>Choki Travel Agent</h2>
+                        <i style="font-size: 14px; text-decoration: underline; color: gray">
+                            <a href="../packages/trekking.html">Choose for the best Trip</a>
+                        </i>
+                    </div>
+
                 </div>
+                <p style="margin: 22px 0; letter-spacing: 1px;line-height: 30px;">
+                    We sincerely hope that the information provided on our website have been useful in knowing more
+                    about destination BHUTAN and planning your trip to this
+                    fascinating Himalayan Jewel. For any further information or to book a tour, please contact us:
+                </p>
+                <div class="booking-details-contact">
+                    <i class="fa fa-map-marker booking-icon"></i>
+                    <span> 202, Eros Metro Mall, Sector 14, Dwarka, New Delhi 110075</span>
+                </div>
+                <div class="booking-details-contact">
 
-            </div>
-            <p style="margin: 22px 0; letter-spacing: 1px;line-height: 30px;">
-                We sincerely hope that the information provided on our website have been useful in knowing more about destination BHUTAN and planning your trip to this
-                fascinating Himalayan Jewel. For any further information or to book a tour, please contact us:
-            </p>
-            <div class="booking-details-contact">
-                <i class="fa fa-map-marker booking-icon"></i>
-                <span> 202, Eros Metro Mall, Sector  14, Dwarka, New Delhi  110075</span>
-            </div>
-            <div class="booking-details-contact">
-
-                <i class="fa fa-mobile booking-icon"></i>
-                <span>  +65 8767-9939 </span>
-            </div>
-            <div class="booking-details-contact">
-                <i class="fa fa-envelope-o booking-icon" aria-hidden="true"></i>
-                <span> +65 8767-9939 </span>
+                    <i class="fa fa-mobile booking-icon"></i>
+                    <span> +65 8767-9939 </span>
+                </div>
+                <div class="booking-details-contact">
+                    <i class="fa fa-envelope-o booking-icon" aria-hidden="true"></i>
+                    <span> +65 8767-9939 </span>
+                </div>
             </div>
         </div>
-    </div>
-</main>
-<footer>
-    <p>&copy; 2024 Choki Dorji</p>
-</footer>
-<script src="../../scripts/form-validation.js"></script>
+    </main>
+    <footer>
+        <p>&copy; 2024 Choki Dorji</p>
+        <p><i class="fa fa-phone"></i>Phone No: <span>+975 17 44 22 82</span></p>
+        <p><i class="fa fa-google"></i>Email Address: <span>chokidorji889@yahoo.com</span></p>
+        <div style="display: flex; gap: 10px; margin: 16px 0; font-size: 36px">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+
+    </footer>
+    <script src="../../scripts/form-validation.js"></script>
 </body>
+
 </html>
