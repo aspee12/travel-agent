@@ -56,37 +56,78 @@
     <main>
         <div style="display: flex; justify-content: center; width: 100%">
             <div class="booking-contact">
-                <form id="bookingForm" style="display: flex; flex-wrap: wrap;">
-                    <div class="booking-contact-input full-width">
-                        <label class="contact-label" for="name">Name: </label>
-                        <input class="full-width input-field" type="text" id="name" name="name" required>
+                <form id="bookingForm" style="display: flex; flex-wrap: wrap;" action="booking.php" method="post">
+                    <div class="booking-contact-input" style="width: 48%; margin-right: 24px;">
+                        <label class="contact-label" for="name">First Name: </label>
+                        <input class="full-width input-field" type="text" id="first_name" name="first_name" required />
                         <p id="error-name" class="contact-error">
                             This field is required
                         </p>
                     </div>
-                    <div class="booking-contact-input" style="width: 48%; margin-right: 24px">
-                        <label class="contact-label" for="email">Email: </label>
-                        <input class="full-width input-field" type="email" id="email" name="email" required>
-                        <p id="error-email" class="contact-error">
+                    <div class="booking-contact-input" style="width: 49%">
+                        <label class="contact-label" for="name">Last Name: </label>
+                        <input class="full-width input-field" type="text" id="last_name" name="last_name" required />
+                        <p id="error-name" class="contact-error">
                             This field is required
                         </p>
                     </div>
-                    <div class="booking-contact-input" style="width: 49%">
-                        <label class="contact-label" for="phone">Phone Number: </label>
-                        <input class="full-width input-field" type="text" id="phone" name="phone" required>
+                    <div class="booking-contact-input" style="width: 100%">
+                        <label class="contact-label" for="name">Gender: </label>
+                        <div style="display: flex; gap: 28px; margin-top: 24px;">
+                            <label for="male" style="display: flex; cursor: pointer;" class="radio-inline">
+                                <input style="width: fit-content; margin-right: 8px;" type="radio" name="gender" id="male" value="male" /> 
+                                Male
+                            </label>
+                            <label for="female" style="display: flex; cursor: pointer;" class="radio-inline">
+                                <input style="width: fit-content; margin-right: 8px;" type="radio" name="gender" id="female" value="female" />
+                                Female
+                            </label>
+                            <label for="other" style="display: flex; cursor: pointer;" class="radio-inline">
+                                <input style="width: fit-content; margin-right: 8px;" type="radio" name="gender" id="other" value="other" />
+                                Other
+                            </label>
+                        </div>
+                    </div>
+                    <div class="booking-contact-input" style="width: 48%; margin-right: 24px;">
+                        <label class="contact-label" for="phone">Country: </label>
+                        <input class="full-width input-field" type="text" id="country" name="country" required />
                         <p id="error-phone" class="contact-error">
                             This field is required
                         </p>
                     </div>
+                    <div class="booking-contact-input" style="width: 49%">
+                        <label class="contact-label" for="email">Email: </label>
+                        <input class="full-width input-field" type="email" id="email" name="email" required />
+                        <p id="error-email" class="contact-error">
+                            This field is required
+                        </p>
+                    </div>
+                    <div class="booking-contact-input" style="width: 48%; margin-right: 24px;">
+                        <label class="contact-label" for="phone">Phone Number: </label>
+                        <input class="full-width input-field" type="number" id="phone_number" name="phone_number" required />
+                        <p id="error-phone" class="contact-error">
+                            This field is required
+                        </p>
+                    </div>
+                    <div class="booking-contact-input" style="display: flex; width: 49%">
+                        <div style="width: 50%; margin-right: 8px;">
+                            <label class="contact-label" for="phone">Start Date: </label>
+                            <input class="full-width input-field" type="date" id="startDate" name="start_date" />
+                        </div>
+                        <div style="width: 50%;">
+                            <label class="contact-label" for="phone">End Date: </label>
+                            <input class="full-width input-field" type="date" id="endDate" name="end_date" />
+                        </div>
+                    </div>
                     <div class="booking-contact-input full-width">
                         <label class="contact-label" for="message">Message: </label>
-                        <textarea class="full-width input-field" rows="12" cols="20" type="text" id="message"
-                            name="message" required></textarea>
+                        <textarea class="full-width input-field" rows="12" cols="20" type="text" id="message" name="message" required>
+                        </textarea>
                         <p id="error-message" class="contact-error">
                             This field is required
                         </p>
                     </div>
-                    <button style="border-radius: 0" type="submit" onclick="submitForm(event, 'booking')">Book
+                    <button style="border-radius: 0" type="submit" name="save_booking" onclick="submitForm(event, 'booking')">Book
                         Now</button>
                 </form>
             </div>
